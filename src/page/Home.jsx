@@ -52,7 +52,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat md:h-[100vh] pt-8 ">
+      <div className="bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] pt-8 ">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-100"></div>
 
         <div className="relative z-10">
@@ -107,45 +107,45 @@ const Home = () => {
 
       <div
         ref={registerSectionRef}
-        class="max-w-[90vw] mx-auto mb-24 bg-purple-600 *:text-white p-8 rounded-lg shadow-lg mt-12"
+        className="max-w-[90vw] mx-auto mb-24 bg-purple-600 *:text-white p-8 rounded-lg shadow-lg mt-12"
       >
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
           For Registration
         </h2>
 
-        <p class="text-lg text-center text-gray-600 mb-8">
+        <p className="text-lg text-center text-gray-600 mb-8">
           For registration or inquiries, you can reach us through the following
           platforms:
         </p>
 
-        <div class="flex justify-center md:space-x-8 max-md:flex-col max-md:gap-4 max-md:items-center *:max-md:w-[200px]">
+        <div className="flex justify-center md:space-x-8 max-md:flex-col max-md:gap-4 max-md:items-center *:max-md:w-[200px]">
           {" "}
           {/* <!-- WhatsApp --> */}
           <a
             href="https://wa.me/+9779763497876"
             target="_blank"
-            class="flex items-center space-x-3 bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300"
+            className="flex items-center space-x-3 bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300"
           >
             <i className="bi bi-whatsapp"></i>
-            <span class="text-lg font-semibold">WhatsApp</span>
+            <span className="text-lg font-semibold">WhatsApp</span>
           </a>
           {/* <!-- Facebook --> */}
           <a
             href="https://www.facebook.com/profile.php?id=61570406934706"
             target="_blank"
-            class="flex items-center space-x-3 bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+            className="flex items-center space-x-3 bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
           >
-            <i class="bi bi-facebook"></i>
-            <span class="text-lg font-semibold">Facebook</span>
+            <i className="bi bi-facebook"></i>
+            <span className="text-lg font-semibold">Facebook</span>
           </a>
           {/* <!-- Instagram --> */}
           <a
             href="https://www.instagram.com/infesporthub/"
             target="_blank"
-            class="flex items-center space-x-3 bg-pink-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 transition duration-300"
+            className="flex items-center space-x-3 bg-pink-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 transition duration-300"
           >
-            <i class="bi bi-instagram"></i>
-            <span class="text-lg font-semibold">Instagram</span>
+            <i className="bi bi-instagram"></i>
+            <span className="text-lg font-semibold">Instagram</span>
           </a>
         </div>
       </div>
