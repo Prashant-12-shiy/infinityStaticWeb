@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import { motion } from "motion/react";
 import Tournament from "./Tournament";
@@ -41,19 +41,18 @@ const Home = () => {
   const registerSectionRef = useRef(null);
 
   const handleRegisterClick = () => {
-      // Scroll to the register section when the button is clicked
-      if (registerSectionRef.current) {
-          registerSectionRef.current.scrollIntoView({
-              behavior: 'smooth', // Smooth scroll effect
-              block: 'start',     // Align at the start of the div
-          });
-      }
+    // Scroll to the register section when the button is clicked
+    if (registerSectionRef.current) {
+      registerSectionRef.current.scrollIntoView({
+        behavior: "smooth", // Smooth scroll effect
+        block: "start", // Align at the start of the div
+      });
+    }
   };
-
 
   return (
     <div>
-      <div className="bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] pt-8 ">
+      <div className="bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat md:h-[100vh] pt-8 ">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-100"></div>
 
         <div className="relative z-10">
@@ -76,7 +75,7 @@ const Home = () => {
         </motion.p>
       </div>
 
-      <Tournament handleRegisterClick={handleRegisterClick}/>
+      <Tournament handleRegisterClick={handleRegisterClick} />
 
       <div className=" flex flex-col xl:h-[100vh] justify-center items-center max-md:my-20">
         <h2 className="text-[70px] font-bold max-md:text-center max-md:text-[40px] bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 bg-clip-text text-transparent animate-gradient-flow">
@@ -106,9 +105,10 @@ const Home = () => {
         </div>
       </div>
 
-  
-
-      <div ref={registerSectionRef} class="max-w-[90vw] mx-auto mb-24 bg-purple-600 *:text-white p-8 rounded-lg shadow-lg mt-12">
+      <div
+        ref={registerSectionRef}
+        class="max-w-[90vw] mx-auto mb-24 bg-purple-600 *:text-white p-8 rounded-lg shadow-lg mt-12"
+      >
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
           For Registration
         </h2>
